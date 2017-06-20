@@ -1,11 +1,6 @@
 language: php
-
 php:
-   - 5.5
-   - 5.6
-
-before_script:
-  - git clone --depth 1 git://github.com/sebastianbergmann/phpunit  vendor/ && cd vendor
-
-script:
-  - phpunit ../Test/
+  - 5.5
+  - 5.4
+  - hhvm
+script: phpunit Test.php
