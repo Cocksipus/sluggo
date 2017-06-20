@@ -6,6 +6,7 @@ class Sluggo {
 
     /**
      * The glue to be used between characters
+     * Default '-'
      * @var string
      */
     private static $_glue = '-';
@@ -35,10 +36,12 @@ class Sluggo {
         $glue = is_null($glue) ? self::$_glue : $glue;
 
         $cleaned_str = self::cleanString( $string );
-        $slugged_string = preg_replace('#-{2,}#', $glue, $cleaned_str);
-        $slugged_string = preg_replace('#([^a-z0-9]+)#i',  $glue, $slugged_string);
+        $slugged_string = preg_replace('#([^a-z0-9]+)#i',  $glue, $cleaned_str);
+        $slugged_string = preg_replace('#^-|-$#','', $slugged_string);
+        $slugged_string = preg_replace('#^_|_$#','', $slugged_string);
 
         return $slugged_string;
+
     }
 
 
@@ -48,10 +51,14 @@ class Sluggo {
      */
     private static function cleanString( $string ){
         $newString = trim($string);
+
+        // replacing spacial alphabet character
         $newString = str_replace(self::$_toBeReplaced, self::$_replace_by, $newString);
-        $newString = preg_replace('#-$#','', $newString);
-        $newString = preg_replace('#^-#','', $newString);
-        return $newString;
+
+        // remove all unwanted character Ex: @$#%^&*()_+
+        $newString = preg_replace('#\W#',' ', $newString);
+
+        return strtolower($newString);
     }
 
 }
