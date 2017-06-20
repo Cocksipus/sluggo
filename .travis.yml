@@ -5,7 +5,7 @@ php:
    - 5.6
 
 before_script:
-  - composer install --no-interaction
+  - git clone --depth 1 git://github.com/sebastianbergmann/phpunit  vendor/ && cd vendor
 
 script:
-  - vendor/bin/phpunit
+  - phpunit ../Test/
