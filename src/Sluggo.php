@@ -5,7 +5,7 @@ namespace slugging;
 class Sluggo {
 
     /**
-     * The glue to be used between characters
+     * The glue to be used
      * Default '-'
      * @var string
      */
