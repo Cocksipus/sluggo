@@ -1,5 +1,5 @@
 ## Sluggo
-[![Build Status](https://travis-ci.org/Cocksipus/sluggo.svg?branch=master)](https://travis-ci.org/Cocksipus/sluggo)  [![Coverage Status](https://coveralls.io/repos/github/Cocksipus/sluggo/badge.svg?branch=master)](https://coveralls.io/github/Cocksipus/sluggo?branch=master)
+[![Build Status](https://travis-ci.org/Cocksipus/sluggo.svg?branch=master)](https://travis-ci.org/Cocksipus/sluggo) 
 
 A PHP class to create slug from string
 
