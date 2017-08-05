@@ -1,8 +1,8 @@
 ## Sluggo
+[![Build Status](https://travis-ci.org/Cocksipus/sluggo.svg?branch=master)](https://travis-ci.org/Cocksipus/sluggo)
 
 A PHP class to create slug from string
 
-[![Build Status](https://travis-ci.org/Cocksipus/sluggo.svg?branch=master)](https://travis-ci.org/Cocksipus/sluggo)
 
 ### How to use
 
