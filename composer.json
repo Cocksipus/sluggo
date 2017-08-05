@@ -1,6 +1,19 @@
 {
     "name": "cocksipus/sluggo",
+    "type": "library",
     "description": "Simple PHP class to create slug from string",
+    "keywords": ["slug", "class slug", "library"],
+    "homepage": "https://github.com/Cocksipus/sluggo",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeaphil",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    },
     "autoload": {
         "psr-4":{
             "slugging\\": "src/"
