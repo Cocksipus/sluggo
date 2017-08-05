@@ -1,5 +1,5 @@
 {
-    "name": "sluggo/sluggo",
+    "name": "Cocksipus/sluggo",
     "description": "Simple PHP class to create slug from string",
     "autoload": {
         "psr-4":{
