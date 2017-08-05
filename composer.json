@@ -1,7 +1,6 @@
 {
-    "require-dev": {
-        "phpunit/phpunit": "5.7"
-    },
+    "name": "sluggo/sluggo",
+    "description": "Simple PHP class to create slug from string",
     "autoload": {
         "psr-4":{
             "slugging\\": "src/"
