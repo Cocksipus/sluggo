@@ -10,3 +10,6 @@ cache:
 before_script: composer require --dev "phpunit/phpunit=5.7"
 
 script: vendor/bin/phpunit Test/SluggoTest.php
+
+notifications:
+  email: false
