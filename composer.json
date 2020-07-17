@@ -1,9 +1,9 @@
 {
-    "name": "cocksipus/sluggo",
+    "name": "jeaphil/sluggo",
     "type": "library",
     "description": "Simple PHP class to create slug from string",
     "keywords": ["slug", "class slug", "library"],
-    "homepage": "https://github.com/Cocksipus/sluggo",
+    "homepage": "https://github.com/jeaphil/sluggo",
     "license": "MIT",
     "authors": [
         {
